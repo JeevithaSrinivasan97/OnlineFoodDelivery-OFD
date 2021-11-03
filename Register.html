@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel ="stylesheet" href="main.css">
+<script type="text/javascript">
+function valid(){
+	var cname=document.frm.cname.value;
+	var cmail=document.frm.cmail.value;
+	var cpass=document.frm.cpass.value;
+	var cadd=document.frm.cadd.value;
+	var city=document.frm.city.value;
+	var zip=document.frm.zip.value;
+	var cphn=document.frm.cphn.value;
+
+	 if(cname==""){
+		alert("Please enter name");
+		return false;
+		}	
+		else if(cmail==""){
+			alert("Please enter email");
+			return false;
+			}
+	 else if(cpass==""){
+		alert("Please enter password");
+		return false;
+		}
+		else if(cadd==""){
+			alert("Please enter address");
+			return false;
+			}
+		else if(city==""){
+			alert("Please enter city");
+		return false;
+		}	
+		else if(zip==""){
+			alert("Please enter zip");
+			return false;
+			}
+	else if(cphn==""){
+		alert("Please enter phone number");
+		return false;
+		}
+
+}
+
+</script>
+</head>
+<body background="77.jpg">
+<table border="1">
+<div class="reg">
+<form name="frm" action="register"onsubmit="return valid()">
+<tr><th colspan="2">Register</th></tr>
+<tr><td rowspan="2">Name:</td></tr>
+<tr><td><input type ="text" name="cname" placeholder="name"></td></tr>
+ <tr><td rowspan="2">Email:</td></tr>         
+ <tr><td><input type="text" id="email" name="cmail" placeholder="jeevitha@example.com"></td></tr>
+<tr><td rowspan="2">password:</td></tr>
+<tr><td><input type="password" name="cpass" placeholder="password"></td></tr>
+<tr><td rowspan="2">Address:</td></tr>
+<tr><td><input type="text" name="cadd" placeholder="15th street"></td></tr>
+<tr><td rowspan="2">City</td></tr>
+<tr><td><input type="text" id="city" name="city" placeholder="Chennai"></td></tr>
+<tr><td rowspan="2">zip:</td></tr>
+ <tr><td><input type="text" id="zip" name="zip" placeholder="10001"></td></tr>
+<tr><td rowspan="2">Phone no:</td></tr>
+<tr><td><input type="text" name="cphn"placeholder="9856789767"></td></tr>
+<tr><th colspan="2"><input type="submit" value="Save"></th></tr>
+</form>
+</div>
+</table></body>
+</html>
